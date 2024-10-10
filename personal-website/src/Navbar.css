@@ -1,0 +1,114 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+  
+  .navbar {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar-logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-logo h1:hover {
+    color: #66fcf1;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar-links li {
+    margin: 0 1.5rem;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #66fcf1;
+    border-bottom: 2px solid #66fcf1;
+  }
+  
+  /* Navbar toggle for mobile (hamburger menu) */
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+  }
+  
+  .navbar-toggle .bar {
+    height: 3px;
+    width: 30px;
+    background-color: #66fcf1;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #203a43;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(-100%);
+    }
+  
+    .navbar-links.open {
+      display: flex;
+      transform: translateY(0);
+    }
+  
+    .navbar-links li {
+      margin: 1rem 0;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  
+    .navbar-toggle .bar {
+      background-color: #fff;
+    }
+  
+    .navbar {
+      padding: 1rem;
+    }
+  }
+  

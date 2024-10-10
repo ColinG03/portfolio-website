@@ -1,0 +1,83 @@
+/* Card container */
+.card {
+    background-color: #1f2833;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px;
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    border: 1px solid #45a29e;
+    flex: auto;
+
+  }
+  
+  /* Image hover effects */
+  .clubs:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Image in the card */
+  .card-image {
+    width: 50%;
+    flex: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Title styling */
+  .card-title {
+    font-family: 'Roboto Mono', 'Courier New', monospace;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #66fcf1, #45a29e);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Content text styling */
+  .card-text {
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5;
+    color: #c5c6c7;
+    flex: auto;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .double-image {
+    display: flex;
+  }
+
+  .left-image:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Show the tooltip on hover */
+  }
+
+  .right-image:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Show the tooltip on hover */
+  }
+
+  .left-image {
+    width: 250px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .right-image {
+    width: 250px;
+    margin-top: 20px;
+    position: relative;
+  }
+  
