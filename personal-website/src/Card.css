@@ -1,5 +1,5 @@
 /* Card container */
-.card {
+.card, .project-card {
     background-color: #1f2833;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
@@ -11,7 +11,16 @@
     color: white;
     border: 1px solid #45a29e;
     flex: auto;
+  }
 
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.25);
   }
   
   /* Image hover effects */
@@ -27,6 +36,10 @@
     border-radius: 10px;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .tooltip {
+    visibility: visible;
   }
   
   /* Title styling */
@@ -69,6 +82,11 @@
     opacity: 1; /* Show the tooltip on hover */
   }
 
+  .project-card:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Show the tooltip on hover */
+ }
+
   .left-image {
     width: 250px;
     margin-top: 20px;
@@ -80,4 +98,37 @@
     margin-top: 20px;
     position: relative;
   }
+
+  .projects-container {
+    display: flex;
+  }
+  
+  .project-link {
+    flex: 1;
+    display: flex;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-card {
+    display: flex;
+  }
+
+  .project-image {
+    border-radius: 0px;
+    width: 40%;
+    object-fit: contain;
+    transition: none;
+  }
+
+
+
+
+
+ 
   

@@ -1,4 +1,6 @@
-/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +8,17 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto Mono', 'Inconsolata', monospace; 
     background-color: #1e1e1e;
     color: #fff;
   }
+
+  a, h1 {
+    font-family: 'Roboto Mono', 'Inconsolata', monospace; 
+  }
   
   .navbar {
+    
     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
     display: flex;
     justify-content: space-between;
@@ -76,7 +83,7 @@
   }
   
   /* Responsive styling */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     .navbar-links {
       position: absolute;
       top: 100%;

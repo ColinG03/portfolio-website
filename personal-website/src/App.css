@@ -33,6 +33,11 @@
   display: flex;
 }
 
+.sub-message {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
 .bottom-message {
   font-size: 4rem;
   margin-bottom: 80px;  /* Space between the welcome message and the headshot */
@@ -182,6 +187,10 @@ body, #root {
   transition: opacity 0.3s ease;
 }
 
+.project-tooltip {
+  bottom: 105%;
+}
+
 .headshot-container:hover .tooltip {
   visibility: visible;
   opacity: 1; /* Show the tooltip on hover */
@@ -207,11 +216,16 @@ body, #root {
 }
 
 .section-header {
-  margin-top: auto;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 75px;
 }
+
+
+
 
 
 

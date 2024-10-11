@@ -6,7 +6,7 @@ function WelcomeMsg() {
     const [text, setText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
 
-    const messages = [" an engineer", " a problem-solver", " a programmer", " a life-long learner", " an outdoors enthusiast", " a canoe guide"];
+    const messages = [" an engineer", " a problem-solver", " a programmer", " a life-long learner", " a canoe guide"];
     const numMessages = messages.length;
 
     function type() {
