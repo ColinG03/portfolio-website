@@ -11,16 +11,37 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <h1>Colin Gould</h1>
+        <a href="/">
+          <h1>Colin Gould</h1>
+        </a>
       </div>
-      <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="/Colin_Gould_Resume_Current.pdf">Resume/CV</a></li>
-        <li><a href="https://github.com/ColinG03">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/colin-gould15/">LinkedIn</a></li>
+      {/* <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
+        <div className='link-container'><li><a href="/about-me">About Me</a></li></div>
+        <div className='link-container'><li><a href="/projects">Projects</a></li></div>
 
-      </ul>
+      </ul> */}
+      {/* {!isOpen && <ul className="navbar-links">
+        <div className='link-container'><li><a href="/about-me">About Me</a></li></div>
+        <div className='link-container'><li><a href="/projects">Projects</a></li></div>
+
+      </ul>}
+      {isOpen && <div className='navbar-links open'>
+          <div className='link-container'><li><a href="/about-me">About Me</a></li></div>
+          <div className='link-container'><li><a href="/projects">Projects</a></li></div>
+        </div>} */}
+      <div className='navbar-container'>
+        <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
+        <div className="link-container">
+            <li><a href="/">Home</a></li>
+          </div>
+          <div className="link-container">
+            <li><a href="/about-me">About Me</a></li>
+          </div>
+          <div className="link-container">
+            <li><a href="/projects">Projects</a></li>
+          </div>
+        </div>
+      </div>
       <div className="navbar-toggle" onClick={toggleMenu}>
         <span className="bar"></span>
         <span className="bar"></span>
