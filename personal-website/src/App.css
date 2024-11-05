@@ -23,7 +23,7 @@
 .message {
   height: 100px;
   font-family: 'Inconsolata', monospace; /* Monospace for a handwritten typewriter feel */
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   background: linear-gradient(90deg, #8da57a, #c6d3b2); /* Earthy green gradient */
@@ -198,7 +198,7 @@ body, #root {
   align-items: center;
   justify-content: center;
   height: 75px;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 .hero {
@@ -207,6 +207,7 @@ body, #root {
     align-items: space-between;
     margin: 6rem;
     margin-top: 10rem;
+    margin-bottom: 10rem;
     
 }
 
@@ -276,6 +277,7 @@ body, #root {
   }
   .attributions {
     text-align: center;
+    margin-top: 5rem;
   }
 
   

@@ -1,11 +1,7 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './Navbar'
-import WelcomeMsg from './WelcomeMsg'
-import Card from './Card'
-import ProjectCard from './ProjectCard'
-import Carousel from './Carousel'
+import './App.css';
+import Navbar from './Navbar';
+import Projects from './Projects';
+import AboutMe from './AboutMe';
 
 function App() {
   
@@ -16,9 +12,8 @@ function App() {
         <div className='app-container'>
       
       <Navbar></Navbar>
-      
-      {/* <WelcomeMsg></WelcomeMsg> */}
-        
+
+      <div id="home"></div>   
       <div className='hero'>
         <div className='description'>
           <div>
@@ -52,17 +47,17 @@ function App() {
         </a>
       </div>
 
-      {/* <div className='section-header'>
-        <p className='message'>Work Experience</p>
-      </div>
-      <Card title={"QTS Software Developer Intern - RBC Capital Markets"} content1={"In my time at Queen's I have been a member of the Queen's Machine Learning Club (QMIND). With QMIND I have participated in machine learning research and development projects. I have also been a long-standing member of the Commerce and Engineering Environmental Conference (CEEC). CEEC is Canada's largest undergraduate sustainability conference. Most recently, I was the sponsorship director, leading a team of 4 coordinators."}></Card>
-      <Card title={"Canoe Guide - Camp Wanapitei"} content1={"I study Applied Mathematics and Computer Engineering at Queen's University."}></Card>
-       */}
-       {/* <div className='contact'>
-        <h2>Let's Get In Touch!</h2>
+      <div id="about-me"></div>
+        <div className='section-header'>
+          <p className='message header-message'>About Me</p>
+        </div>
+        <AboutMe />
+      
 
+      <div id="projects"></div>
+        <Projects />
+ 
 
-       </div> */}
     </div>
       <div className='attributions'>
         <a className='attribution' href="https://www.flaticon.com/free-icons/graph" title="graph icons">Graph icons created by Mohamed Mbarki - Flaticon / </a>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css'; // Import the CSS file for styling
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,30 +16,19 @@ const Navbar = () => {
           <h1>Colin Gould</h1>
         </a>
       </div>
-      {/* <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <div className='link-container'><li><a href="/about-me">About Me</a></li></div>
-        <div className='link-container'><li><a href="/projects">Projects</a></li></div>
-
-      </ul> */}
-      {/* {!isOpen && <ul className="navbar-links">
-        <div className='link-container'><li><a href="/about-me">About Me</a></li></div>
-        <div className='link-container'><li><a href="/projects">Projects</a></li></div>
-
-      </ul>}
-      {isOpen && <div className='navbar-links open'>
-          <div className='link-container'><li><a href="/about-me">About Me</a></li></div>
-          <div className='link-container'><li><a href="/projects">Projects</a></li></div>
-        </div>} */}
       <div className='navbar-container'>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
         <div className="link-container">
-            <li><a href="/">Home</a></li>
+            <Link to="home" smooth={true} duration={500} offset={-250}>Home</Link>
+            {/* <li><a href="/">Home</a></li> */}
           </div>
           <div className="link-container">
-            <li><a href="/about-me">About Me</a></li>
+            <Link to="about-me" smooth={true} duration={500} offset={-125}>About Me</Link>
+            {/* <li><a href="/about-me">About Me</a></li> */}
           </div>
           <div className="link-container">
-            <li><a href="/projects">Projects</a></li>
+            <Link to="projects" smooth={true} duration={500} >Projects</Link>
+            {/* <li><a href="/projects">Projects</a></li> */}
           </div>
         </div>
       </div>
