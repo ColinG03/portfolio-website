@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap");
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;  */
+  min-height: 100vh;
+  text-align: center;
+  background-color: #fdf7e3; /* Soft off-white for a paper-like effect */
+  background-image: url('path_to_texture_image'); /* Add a subtle paper texture */
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.message {
+  height: 100px;
+  font-family: 'Inconsolata', monospace; /* Monospace for a handwritten typewriter feel */
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(90deg, #8da57a, #c6d3b2); /* Earthy green gradient */
+  background-size: 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.sub-message {
+  font-size: 1rem;
+  color: #5a6343; /* Subtle olive color */
+  margin-bottom: 2rem;
+}
+
+.bottom-message {
+  font-size: 4rem;
+  margin-bottom: 80px;
+  color: #5a6343;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-wide {
+  width: 100vw;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #8da57a; /* Natural green */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lighter shadow for a softer feel */
+  font-family: 'Roboto', sans-serif;
+}
+
+body, #root {
+  padding-top: 40px;
+}
+
+.headshot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.headshot {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+.headshot-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 2px solid #c6d3b2; /* Soft green border */
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hidden */
+  z-index: 0; /* Keep the line behind the image */
+  transition: opacity 0.3s ease;
+}
+
+.headshot-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240px; /* Slightly larger than the image */
+  height: 240px;
+  border-radius: 50%;
+  border: 2px dashed transparent; /* Dashed line */
+  border-top-color: #8da57a; 
+  border-bottom-color: #8da57a;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.headshot-container:hover::before,
+.headshot-container:hover::after {
+  opacity: 1;
+}
+
+.headshot-container:hover::before {
+    animation: spin-solid 2s linear infinite; 
+  }
+  
+  .headshot-container:hover::after {
+    animation: spin-dashed 2s linear infinite; 
+  }
+  
+  .headshot:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .headshot-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .tooltip {
+    visibility: hidden; 
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    bottom: 110%; 
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .tooltip-below {
+    bottom: 0%;
+  }
+  
+  .project-tooltip {
+    bottom: -12%;
+  }
+  
+  .headshot-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1; 
+  }
+  
+  @keyframes spin-solid {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-dashed {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(-360deg); 
+    }
+  }
+
+.section-header {
+  font-family: 'Roboto', sans-serif;
+  color: #5a6343;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  margin-top: 10rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 6rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    
+}
+
+.description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    text-align: start;
+    flex: auto;
+    width: 700px;
+    padding: 50px;
+    /* padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 40px; */
+    position: relative;
+    margin-right: 100px;
+
+}
+
+.description::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 4px solid rgb(3, 72, 3); /* Top border */
+    border-left: 4px solid rgb(3, 72, 3); /* Left border */
+    width: 40px; /* Length of the top border */
+    height: 40px; /* Length of the left border */
+  }
+  
+  .description::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 4px solid rgb(3, 72, 3); /* Bottom border */
+    border-right: 4px solid rgb(3, 72, 3); /* Right border */
+    width: 40px; /* Length of the bottom border */
+    height: 40px; /* Length of the right border */
+  }
+
+  .description-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+  }
+
+  .icon {
+    height: 30px;
+    width: 30px;
+    filter: grayscale(1) contrast(100);
+    transition: 0.25s ease;
+  }
+
+  .icon:hover {
+    transform: scale(1.1);
+  }
+
+  .attribution {
+    font-size: 10px;
+  }
+  .attributions {
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  
+
+  

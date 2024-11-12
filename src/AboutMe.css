@@ -1,0 +1,10 @@
+.title {
+    padding-top: 3rem;
+}
+
+.double-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
