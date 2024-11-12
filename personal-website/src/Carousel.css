@@ -2,7 +2,7 @@
     position: relative;
     width: 80%;
     margin: 0 auto;
-    overflow: hidden; /* Hide overflow for adjacent cards */
+    overflow: hidden;
     display: flex;
     justify-content: center;
   }
@@ -18,16 +18,16 @@
   }
   
   .project-link {
-    flex: 0 0 60%; /* Each card takes up full width but will be scaled down */
-    margin: 0 2%; /* Adjust space between cards */
-    opacity: 0.5; /* De-emphasize non-active cards */
-    transform: scale(0.8); /* Scale down non-active cards */
+    flex: 0 0 60%;
+    margin: 0 2%; 
+    opacity: 0.5;
+    transform: scale(0.8); 
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
   
   .project-link.active {
     opacity: 1;
-    transform: scale(1); /* Full size for active card */
+    transform: scale(1);
   }
   
   .carousel-control {
@@ -38,7 +38,7 @@
     border: none;
     font-size: 5rem;
     cursor: pointer;
-    color: #5a6343; /* Natural tone */
+    color: #5a6343;
     padding: 0;
   }
   

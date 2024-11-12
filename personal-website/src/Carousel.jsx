@@ -37,26 +37,15 @@ const Carousel = () => {
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length); // Move to the previous card
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
   };
 
-//   const calculateTransform = () => {
-//     const cardWidthPercentage = 60; // The card takes up 60% of the container width
-//     const visibleWidth = 80; // The visible container is 80% width
-//     const sideSpace = (visibleWidth - cardWidthPercentage) / 2; // The space on the left and right sides for centering
-//     const moveDistance = cardWidthPercentage + 4; // Adjust the movement distance, accounting for the margin (60% width + 2% margin each side)
-  
-//     return `translateX(calc(-${currentIndex * moveDistance}% + ${sideSpace}%))`; // Move the carousel by the card width with offset
-//   };
-
-const calculateTransform = () => {
-    const totalCards = cards.length;
-    const cardWidth = 60; // Card width as a percentage of the container
-    const gapBetweenCards = 4; // Gap between cards (2% margin on each side)
+  const calculateTransform = () => {
+    const cardWidth = 60;
+    const gapBetweenCards = 4;
     
-    // Each move will be (cardWidth + gapBetweenCards), and we need to adjust
     const movePercentage = currentIndex * (cardWidth + gapBetweenCards);
-    const initialOffset = (100 - cardWidth) / 2; // Initial offset to center the first card
+    const initialOffset = (100 - cardWidth) / 2;
     
     return `translateX(calc(-${movePercentage}% + ${initialOffset}%))`;
   };
@@ -77,7 +66,6 @@ const calculateTransform = () => {
           >
             <ProjectCard
               title={card.title}
-              content1={""}
               imageUrl={card.imageUrl}
               tooltipText={card.tooltipText}
             />

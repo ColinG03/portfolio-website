@@ -64,10 +64,8 @@ function App() {
         <a className='attribution' href="https://www.flaticon.com/free-icons/hospital-bed" title="hospital bed icons">Hospital bed icons created by Freepik - Flaticon / </a>
         <a className='attribution' href="https://www.flaticon.com/free-icons/laboratory" title="laboratory icons">Laboratory icons created by Freepik - Flaticon / </a>
         <a className='attribution' href="https://www.flaticon.com/free-icons/lunch" title="lunch icons">Lunch icons created by Freepik - Flaticon / </a>
-        <a className='attribution' href="https://www.flaticon.com/free-icons/curriculum" title="curriculum icons">Curriculum icons created by Freepik - Flaticon</a>
-        <a className='attribution' href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
-        <a className='attribution' href="https://www.flaticon.com/free-icons/cg" title="cg icons">Cg icons created by shohanur.rahman13 - Flaticon</a>
-      </div>
+        <a className='attribution' href="https://www.flaticon.com/free-icons/curriculum" title="curriculum icons">Curriculum icons created by Freepik - Flaticon / </a>
+        <a className='attribution' href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon / </a>      </div>
     </>
 
   )

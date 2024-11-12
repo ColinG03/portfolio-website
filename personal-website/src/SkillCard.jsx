@@ -11,38 +11,49 @@ const SkillCard = () => {
                 <button class="dropbtn">C/C++</button>
                 </div>
                 <div class="dropdown">
-                <button class="dropbtn">C#</button>
-                <div class="dropdown-content">
-                    <a href="#">.NET</a>
-                </div>
-                </div>
-                <div class="dropdown">
-                <button class="dropbtn">Javascript</button>
-                <div class="dropdown-content">
-                    <a href="#">React</a>
-                    <a href="#">Angular</a>
-                    <a href="#">Node.js</a>
-                    <a href="#">Express.js</a>
-                    <a href="#">Sequelize</a>
-                </div>
+                    <button class="dropbtn">C#</button>
+                    <div class="dropdown-content">
+                        <a>.NET</a>
+                    </div>
                 </div>
                 <div class="dropdown">
-                <button class="dropbtn">Java</button>
+                    <button class="dropbtn">Javascript</button>
+                    <div class="dropdown-content">
+                        <a>React</a>
+                        <a>Angular</a>
+                        <a>Node.js</a>
+                        <a>Express.js</a>
+                        <a>Sequelize</a>
+                    </div>
+                </div>
+                    <div class="dropdown">
+                    <button class="dropbtn">Java</button>
+                    </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Python</button>
+                    <div class="dropdown-content">
+                        <a>Flask</a>
+                        <a>Tensorflow</a>
+                        <a>PyTorch</a>
+                    </div>
                 </div>
                 <div class="dropdown">
-                <button class="dropbtn">Python</button>
-                <div class="dropdown-content">
-                    <a href="#">Flask</a>
-                    <a href="#">Tensorflow</a>
-                    <a href="#">PyTorch</a>
-                </div>
+                    <button class="dropbtn">SQL</button>
+                    <div class="dropdown-content">
+                        <a>MSSQL</a>
+                        <a>MySql</a>
+                    </div>
                 </div>
                 <div class="dropdown">
-                <button class="dropbtn">SQL</button>
-                <div class="dropdown-content">
-                    <a href="#">MSSQL</a>
-                    <a href="#">MySql</a>
-                </div>
+                    <button class="dropbtn">Developer Tools</button>
+                    <div class="dropdown-content">
+                        <a>Git/Github</a>
+                        <a>Jira</a>
+                        <a>Confluence</a>
+                        <a>Postman</a>
+                        <a>Visual Studio</a>
+                        <a>VS Code</a>
+                    </div>
                 </div>
             </div>
             
