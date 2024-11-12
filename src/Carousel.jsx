@@ -14,19 +14,19 @@ const Carousel = () => {
     },
     {
       title: "Bed Match Pro",
-      imageUrl: "/hospital-bed.png",
+      imageUrl: "hospital-bed.png",
       link: "https://www.youtube.com/watch?v=9KXsTzVWBnI&ab_channel=ColinG",
       tooltipText: "Check out the live demo!"
     },
     {
       title: "Breast Cancer Classification",
-      imageUrl: "/microscope.png",
+      imageUrl: "microscope.png",
       link: "https://www.kaggle.com/code/colingould/siyung-cho-advanced-hackathon-starter-notebook",
       tooltipText: "Check out the Kaggle!"
     },
     {
       title: "MealMap: AI Meal Recommendations",
-      imageUrl: "/meal.png",
+      imageUrl: "meal.png",
       link: "https://github.com/mecsabb/meal-planner",
       tooltipText: "Check out the GitHub!"
     }
