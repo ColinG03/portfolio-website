@@ -42,7 +42,7 @@ function App() {
         </div>
 
         <a className='headshot-container' href="/Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
-          <img className="headshot" src="/Colin_Gould_headshot.jpeg" alt="Headshot" />
+          <img className="headshot" src="/portfolio-website/Colin_Gould_headshot.jpeg" alt="Headshot" />
           <span className='tooltip tooltip-below' >Resume/CV</span>
         </a>
       </div>
@@ -65,7 +65,8 @@ function App() {
         <a className='attribution' href="https://www.flaticon.com/free-icons/laboratory" title="laboratory icons">Laboratory icons created by Freepik - Flaticon / </a>
         <a className='attribution' href="https://www.flaticon.com/free-icons/lunch" title="lunch icons">Lunch icons created by Freepik - Flaticon / </a>
         <a className='attribution' href="https://www.flaticon.com/free-icons/curriculum" title="curriculum icons">Curriculum icons created by Freepik - Flaticon / </a>
-        <a className='attribution' href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon / </a>      </div>
+        <a className='attribution' href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon / </a>      
+      </div>
     </>
 
   )
