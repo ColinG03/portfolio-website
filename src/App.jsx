@@ -23,7 +23,7 @@ function App() {
                 <a className='icon-link' href="Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
                   <img className="icon" src="/portfolio-website/curriculum-vitae.png" alt="Resume/CV" />
                 </a>
-                <a className='icon-link' href="20cvwg@queensu.ca">
+                <a className='icon-link' href="mailto:20cvwg@queensu.ca">
                   <img className='icon' src="/portfolio-website/email.png" alt="email" target="_blank" rel="noopener noreferrer"/>
                 </a>
                 <a className='icon-link' href="https://github.com/ColinG03" target="_blank" rel="noopener noreferrer">
