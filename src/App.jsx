@@ -20,11 +20,11 @@ function App() {
             <div className='description-header'>
               <h2>Hi, I'm Colin</h2>
               <div className='icon-container'>
-                <a className='icon-link' href="/Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
+                <a className='icon-link' href="Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
                   <img className="icon" src="/portfolio-website/curriculum-vitae.png" alt="Resume/CV" />
                 </a>
                 <a className='icon-link' href="20cvwg@queensu.ca">
-                  <img className='icon' src="/portfolio-website/email.png" alt="email" />
+                  <img className='icon' src="/portfolio-website/email.png" alt="email" target="_blank" rel="noopener noreferrer"/>
                 </a>
                 <a className='icon-link' href="https://github.com/ColinG03" target="_blank" rel="noopener noreferrer">
                   <img className="icon" src="/portfolio-website/github-mark.png" alt="GitHub" />
@@ -41,8 +41,8 @@ function App() {
           </div>      
         </div>
 
-        <a className='headshot-container' href="/portfolio-website/Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
-          <img className="headshot" src="/portfolio-website/Colin_Gould_headshot.jpeg" alt="Headshot" />
+        <a className='headshot-container' href="Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
+          <img className="headshot" src="Colin_Gould_headshot.jpeg" alt="Headshot" />
           <span className='tooltip tooltip-below' >Resume/CV</span>
         </a>
       </div>
