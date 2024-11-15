@@ -4,58 +4,59 @@ import Projects from './Projects';
 import AboutMe from './AboutMe';
 
 function App() {
-  
-
-
   return (
     <>
-        <div className='app-container'>
+      <div className='app-container'>
       
       <Navbar></Navbar>
 
-      <div id="home"></div>   
+      <div id="home">  
       <div className='hero'>
-        <div className='description'>
-          <div>
-            <div className='description-header'>
-              <h2>Hi, I'm Colin</h2>
-              <div className='icon-container'>
-                <a className='icon-link' href="Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
-                  <img className="icon" src="/portfolio-website/curriculum-vitae.png" alt="Resume/CV" />
-                </a>
-                <a className='icon-link' href="mailto:20cvwg@queensu.ca">
-                  <img className='icon' src="/portfolio-website/email.png" alt="email" target="_blank" rel="noopener noreferrer"/>
-                </a>
-                <a className='icon-link' href="https://github.com/ColinG03" target="_blank" rel="noopener noreferrer">
-                  <img className="icon" src="/portfolio-website/github-mark.png" alt="GitHub" />
-                </a>
-                <a className='icon-link' href="https://www.linkedin.com/in/colin-gould15/" target="_blank" rel="noopener noreferrer">
-                  <img className="icon" src="/portfolio-website/LI-In-Bug.png" alt="LinkedIn" />
-                </a>
+          <div className='description'>
+            <div>
+              <div className='description-header'>
+                <h2>Hi, I'm Colin</h2>
+                <div className='icon-container'>
+                  <a className='icon-link' href="Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
+                    <img className="icon" src="/portfolio-website/curriculum-vitae.png" alt="Resume/CV" />
+                  </a>
+                  <a className='icon-link' href="mailto:20cvwg@queensu.ca">
+                    <img className='icon' src="/portfolio-website/email.png" alt="email" target="_blank" rel="noopener noreferrer"/>
+                  </a>
+                  <a className='icon-link' href="https://github.com/ColinG03" target="_blank" rel="noopener noreferrer">
+                    <img className="icon" src="/portfolio-website/github-mark.png" alt="GitHub" />
+                  </a>
+                  <a className='icon-link' href="https://www.linkedin.com/in/colin-gould15/" target="_blank" rel="noopener noreferrer">
+                    <img className="icon" src="/portfolio-website/LI-In-Bug.png" alt="LinkedIn" />
+                  </a>
+                </div>
               </div>
-            </div>
-            <br />
-            <p>I am a Mathematics and Computer Engineering student at Queen's University</p>
-            <br />
-            <p>Currently, I'm working as a Software Developer Intern at RBC Capital Markets, on the Global Equity and Derivatives team. I am also doing machine learning research with QMIND, the Queen's Machine Learning Club. </p>
-          </div>      
+              <div className='description-text'>
+                  <p>I am a Mathematics and Computer Engineering student at Queen's University</p>
+                  <br />
+                  <p>Currently, I'm working as a Software Developer Intern at RBC Capital Markets, on the Global Equity and Derivatives team. I am also doing machine learning research with QMIND, the Queen's Machine Learning Club. </p>
+              </div>
+            </div>      
+          </div>
+
+          <a className='headshot-container' href="Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
+            <img className="headshot" src="Colin_Gould_headshot.jpeg" alt="Headshot" />
+            <span className='tooltip tooltip-below' >Resume/CV</span>
+          </a>
         </div>
-
-        <a className='headshot-container' href="Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
-          <img className="headshot" src="Colin_Gould_headshot.jpeg" alt="Headshot" />
-          <span className='tooltip tooltip-below' >Resume/CV</span>
-        </a>
-      </div>
-
-      <div id="about-me"></div>
+      </div> 
+      
+      <div id="about-me">
         <div className='section-header'>
           <p className='message header-message'>About Me</p>
         </div>
         <AboutMe />
-      
+      </div>
 
-      <div id="projects"></div>
+
+      <div id="projects">
         <Projects />
+      </div>
  
 
     </div>

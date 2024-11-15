@@ -12,10 +12,9 @@ const AboutMe = () => {
     }
     return (
         <>
-            <Navbar></Navbar>
             <div className='card-container'>
                 <div className='double-card'>
-                    <div>
+                    <div className='inner-card'>
                         <h2>Education</h2>
                         <Card
                         className="side-by-side"
@@ -24,7 +23,7 @@ const AboutMe = () => {
                         >
                         </Card>
                     </div>
-                    <div>
+                    <div className='inner-card'>
                         <h2>Work Experience</h2>
                         <Card
                         className="side-by-side"
@@ -38,7 +37,7 @@ const AboutMe = () => {
                 <SkillCard></SkillCard>
                 
                 <div className='double-card'>
-                    <div>
+                    <div className='inner-card'>
                         <h2>Extra-Curricular Involvement</h2>
                         <Card
                         className="side-by-side"
@@ -49,7 +48,7 @@ const AboutMe = () => {
                         </Card>
                     </div>
                     
-                    <div>
+                    <div className='inner-card'>
                         <h2>Hobbies</h2>
                         <Card
                         className="side-by-side"

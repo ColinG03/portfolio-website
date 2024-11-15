@@ -8,16 +8,19 @@ const SkillCard = () => {
 
             <div className='skill-container'>
                 <div class="dropdown">
-                <button class="dropbtn">C/C++</button>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">C#</button>
+                    <button class="dropbtn">
+                        <div>C#</div>
+                        <div className='arrow'>&#10216;</div>
+                    </button>
                     <div class="dropdown-content">
                         <a>.NET</a>
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn">Javascript</button>
+                    <button class="dropbtn">
+                        <div>Javascript</div>
+                        <div className='arrow'>&#10216;</div>
+                    </button>
                     <div class="dropdown-content">
                         <a>React</a>
                         <a>Angular</a>
@@ -30,7 +33,10 @@ const SkillCard = () => {
                     <button class="dropbtn">Java</button>
                     </div>
                 <div class="dropdown">
-                    <button class="dropbtn">Python</button>
+                    <button class="dropbtn">
+                        <div>Python</div>
+                        <div className='arrow'>&#10216;</div>
+                    </button>
                     <div class="dropdown-content">
                         <a>Flask</a>
                         <a>Tensorflow</a>
@@ -38,14 +44,23 @@ const SkillCard = () => {
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn">SQL</button>
+                    <button class="dropbtn">
+                        <div>SQL</div>
+                        <div className='arrow'>&#10216;</div>
+                    </button>
                     <div class="dropdown-content">
                         <a>MSSQL</a>
                         <a>MySql</a>
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn">Developer Tools</button>
+                    <button class="dropbtn">C/C++</button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <div>Developer Tools</div>
+                        <div className='arrow'>&#10216;</div>
+                    </button>
                     <div class="dropdown-content">
                         <a>Git/Github</a>
                         <a>Jira</a>
