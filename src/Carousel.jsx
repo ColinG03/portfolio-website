@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Carousel.css';
 import ProjectCard from './ProjectCard';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+  const [transform, setTransform] = useState(0);
+  const [offset, setOffset] = useState(0);
+
   const cards = [
     {
       title: "Cryptocurrency Arbitrage Pathfinding",
@@ -32,6 +34,13 @@ const Carousel = () => {
     }
   ];
 
+  useEffect(() => {
+      const newOffset = (100 - 64) / 2;
+      const newTransform = currentIndex * 64;
+      setOffset(newOffset);
+      setTransform(newTransform);
+  }, [currentIndex])
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length); // Move to the next card
   };
@@ -40,21 +49,16 @@ const Carousel = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
   };
 
-  const calculateTransform = () => {
-    const cardWidth = 60;
-    const gapBetweenCards = 4;
-    
-    const movePercentage = currentIndex * (cardWidth + gapBetweenCards);
-    const initialOffset = (100 - cardWidth) / 2;
-    
-    return `translateX(calc(-${movePercentage}% + ${initialOffset}%))`;
-  };
+  const getTransform = () => {
+    console.log("transform in getTransform", transform);
+    return `translateX(calc(${offset}% - ${transform}%))`;
+  }
   
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" >
       <div
         className="carousel-track"
-        style={{ transform: calculateTransform() }}
+        style={{transform: getTransform()}}
       >
         {cards.map((card, index) => (
           <a
@@ -68,6 +72,7 @@ const Carousel = () => {
               title={card.title}
               imageUrl={card.imageUrl}
               tooltipText={card.tooltipText}
+              active={index === currentIndex}
             />
           </a>
         ))}

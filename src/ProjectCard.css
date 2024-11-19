@@ -3,8 +3,10 @@
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     padding: 1rem;
+    padding-top: 3rem;
     max-width: 1000px;
     max-height: 400px;
+    min-height: 60vh;
     margin: 20px;
     color: #5a6343;
     border: 1px solid #c6d3b2; 
@@ -15,6 +17,8 @@
     margin-left: 0;
     margin-right: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
 
@@ -22,7 +26,7 @@
     visibility: visible;
   }
 
-  .project-card:hover .tooltip {
+  .active:hover .tooltip {
     visibility: visible;
     opacity: 1;
  }
@@ -30,6 +34,7 @@
  .projects-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .project-image {
@@ -45,7 +50,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
   }
 
   .card-title {
@@ -57,3 +61,16 @@
     color: transparent;
     flex: auto;
   }
+
+    
+  .card-image {
+    width: 50%;
+    flex: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5%;
+    margin-bottom: 10%;
+  }
+
+

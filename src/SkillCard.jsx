@@ -58,7 +58,7 @@ const SkillCard = () => {
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">
-                        <div>Developer Tools</div>
+                        <div>Dev Tools</div>
                         <div className='arrow'>&#10216;</div>
                     </button>
                     <div class="dropdown-content">

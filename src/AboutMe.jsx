@@ -27,7 +27,7 @@ const AboutMe = () => {
                         <h2>Work Experience</h2>
                         <Card
                         className="side-by-side"
-                        content1={"I am currently working as a Software Developer at RBC Capital Markets - Quantitative & Technology Services. In this role I have had the opportunity to build, enhance and fix a variety of console and web applications that provide mission critical services to the Global Equity Derivatives team. I am working with C# (.NET), Javascript (Angular, Node.js, Express.js, Sequelize) and SQL."}
+                        content1={"I am currently working as a Software Developer at RBC Capital Markets - Quantitative & Technology Services. In this role I have had the opportunity to build, enhance and fix a variety of console and web applications that provide critical pricing services to the Global Equity Derivatives team. I am working with C# (.NET), Javascript (Angular, Node.js, Express.js, Sequelize) and SQL."}
                         style={topStyle}
                         >
                         </Card>

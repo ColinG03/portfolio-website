@@ -5,17 +5,33 @@
 .double-card {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
     flex: 1;
-    /* min-width: 200px;
-    max-width: 50%; */
 }
+
 .inner-card {
     flex: 1;
-    min-width: 200px;
+    min-width: 10%;
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    padding: 0;
+}
+  
 
 @media screen and (max-width: 1200px) {
     .card-container {

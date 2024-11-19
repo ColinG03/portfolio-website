@@ -1,6 +1,6 @@
 .carousel-container {
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
     display: flex;
@@ -8,6 +8,8 @@
   }
   
   .carousel-track {
+    width: 100%;
+    height: auto;
     display: flex;
     transition: transform 0.5s ease-in-out;
   }
@@ -18,6 +20,8 @@
   }
   
   .project-link {
+    width: 100%;
+    height: auto;;
     flex: 0 0 60%;
     margin: 0 2%; 
     opacity: 0.5;
@@ -44,9 +48,11 @@
   
   .carousel-control.left {
     left: 30px;
+    color: black;
   }
   
   .carousel-control.right {
     right: 30px;
+    color: black;
   }
   

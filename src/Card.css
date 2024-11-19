@@ -13,9 +13,9 @@
   }
   
   .side-by-side {
-    min-height: 28rem;
-    padding: 1.5rem;
-    max-width: 480px;
+    min-height: 100%;
+    padding: 4%;
+    max-width: 80%;
   }
 
   
