@@ -221,7 +221,7 @@ body, #root {
     left: 0;
     border-top: 4px solid rgb(3, 72, 3);
     border-left: 4px solid rgb(3, 72, 3);
-    width: 5%;
+    width: 4%;
     aspect-ratio: 1 / 1;
   }
   
@@ -232,7 +232,7 @@ body, #root {
     right: 0;
     border-bottom: 4px solid rgb(3, 72, 3);
     border-right: 4px solid rgb(3, 72, 3);
-    width: 5%;
+    width: 4%;
     aspect-ratio: 1 / 1;
   }
 
@@ -287,15 +287,15 @@ body, #root {
     }
     .hero {
       flex-direction: column;
-      max-width: 100%;
+      min-width: 100%;
       justify-content: center;
       align-items: center;
-      margin: 3rem;
-      
+      margin: 0;
     }
 
     .description {
       min-width: 100%;
+      padding: 5%;
     }
 
     .description-header {
@@ -313,7 +313,7 @@ body, #root {
       flex-basis: auto;
       max-width: 300px;
       width: 100%;
-
+      
     }
 
     .description {
