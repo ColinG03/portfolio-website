@@ -47,12 +47,12 @@
   }
   
   .carousel-control.left {
-    left: 30px;
+    left: 10%;
     color: black;
   }
   
   .carousel-control.right {
-    right: 30px;
+    right: 10%;
     color: black;
   }
   

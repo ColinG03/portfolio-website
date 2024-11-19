@@ -6,7 +6,7 @@
   width: 100vw;
   height: auto;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   background-color: #fdf7e3;
 }
 
@@ -333,8 +333,13 @@ body, #root {
 
     }
 
-    #home, #about-me, #projects {
+    #home, #about-me {
       width: 80vw;
+      height: auto;
+    }
+
+    #projects {
+      width: 100vw;
       height: auto;
     }
   }

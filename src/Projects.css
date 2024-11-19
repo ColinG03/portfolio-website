@@ -2,3 +2,10 @@ Project {
     width: auto;
     height: auto;
 }
+
+.proj-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
