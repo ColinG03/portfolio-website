@@ -333,8 +333,13 @@ body, #root {
 
     }
 
-    #home, #about-me {
+    #home {
       width: 80vw;
+      height: auto;
+    }
+
+    #about-me {
+      width: 100vw;
       height: auto;
     }
 
