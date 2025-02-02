@@ -23,19 +23,16 @@ a, h1 {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 4.5rem;
+  height: 5rem;
   z-index: 1000;
-  box-shadow: none; 
+  box-shadow: none;
+  background-color: #fdf7e3;
 }
 
 .navbar-logo h1 {
   font-size: 1.5rem;
   font-weight: bold;
-  /* color: #839a4d; */
   color: #152904;
 }
 
@@ -52,9 +49,7 @@ a, h1 {
 
 .navbar-links a {
   position: relative;
-  /* color: #839a4d; */
   color: #152904;
-
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -183,7 +178,7 @@ a, h1 {
   }
 
   .navbar-toggle .bar {
-    background-color: #6b7a47; /* Earthy tone for the mobile menu */
+    background-color: #6b7a47;
   }
 
   .navbar {
