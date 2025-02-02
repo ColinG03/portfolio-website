@@ -18,7 +18,7 @@ a, h1 {
 }
 
 .navbar {
-  background: #152904; /* Soft natural green gradient */
+  background: none; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,13 +29,14 @@ a, h1 {
   width: 100%;
   height: 4.5rem;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  box-shadow: none; 
 }
 
 .navbar-logo h1 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #839a4d; /* Earthy green for the logo */
+  /* color: #839a4d; */
+  color: #152904;
 }
 
 .navbar-links {
@@ -51,7 +52,9 @@ a, h1 {
 
 .navbar-links a {
   position: relative;
-  color: #839a4d;
+  /* color: #839a4d; */
+  color: #152904;
+
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -66,6 +69,7 @@ a, h1 {
     width: 0;
     height: 2px;
     background-color: #8da57a;
+    /* background-color: #152904; */
     transition: width 0.3s ease-in-out;
 }
 
@@ -74,12 +78,15 @@ a, h1 {
 }
 
 .navbar-links li:hover {
-  color: #8da57a;
+  /* color: #8da57a; */
+  color: #152904;
 }
 
 .navbar-logo li:hover {
-    color: #8da57a;
-  }
+    /* color: #8da57a; */
+    color: #152904;
+
+}
 
 /* Navbar toggle for mobile (hamburger menu) */
 .navbar-toggle {

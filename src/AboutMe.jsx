@@ -12,6 +12,7 @@ const AboutMe = () => {
     }
     return (
         <>
+            <Navbar></Navbar>
             <div className='card-container'>
                 <div className='double-card'>
                     <div className='inner-card'>

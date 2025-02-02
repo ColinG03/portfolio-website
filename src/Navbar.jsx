@@ -19,16 +19,16 @@ const Navbar = () => {
       <div className='navbar-container'>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
         <div className="link-container">
-            <Link to="home" smooth={true} duration={500} offset={-250}>Home</Link>
-            {/* <li><a href="/">Home</a></li> */}
+            {/* <Link to="home" smooth={true} duration={500} offset={-250}>Home</Link> */}
+            <li><a href="/portfolio-website/">Home</a></li>
           </div>
           <div className="link-container">
-            <Link to="about-me" smooth={true} duration={500} offset={-125}>About Me</Link>
-            {/* <li><a href="/about-me">About Me</a></li> */}
+            {/* <Link to="about-me" smooth={true} duration={500} offset={-125}>About Me</Link> */}
+            <li><a href="/portfolio-website/about-me">About Me</a></li>
           </div>
           <div className="link-container">
-            <Link to="projects" smooth={true} duration={500} >Projects</Link>
-            {/* <li><a href="/projects">Projects</a></li> */}
+            {/* <Link to="projects" smooth={true} duration={500} >Projects</Link> */}
+            <li><a href="/portfolio-website/projects">Projects</a></li>
           </div>
         </div>
       </div>

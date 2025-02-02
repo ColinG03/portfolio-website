@@ -1,58 +1,28 @@
 .carousel-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .carousel-track {
-    width: 100%;
-    height: auto;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .active:hover .project-card{
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project-link {
-    width: 100%;
-    height: auto;;
-    flex: 0 0 60%;
-    margin: 0 2%; 
-    opacity: 0.5;
-    transform: scale(0.8); 
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  }
-  
-  .project-link.active {
-    opacity: 1;
-    transform: scale(1);
-  }
-  
-  .carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 5rem;
-    cursor: pointer;
-    color: #5a6343;
-    padding: 0;
-  }
-  
-  .carousel-control.left {
-    left: 10%;
-    color: black;
-  }
-  
-  .carousel-control.right {
-    right: 10%;
-    color: black;
-  }
+.carousel {
+  width: 80%;
+}
+
+.project-container {
+  display: grid;
+  place-items: center;
+  width: 40%;
+}
+
+.project-card {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: green;
+}
+
+
+
   

@@ -46,18 +46,18 @@ function App() {
         </div>
       </div> 
       
-      <div id="about-me">
+      {/* <div id="about-me">
         <div className='section-header'>
           <p className='message header-message'>About Me</p>
         </div>
         <AboutMe />
-      </div>
+      </div> */}
 
 
-      <div id="projects">
+      {/* <div id="projects">
         <Projects />
       </div>
- 
+  */}
 
     </div>
       <div className='attributions'>

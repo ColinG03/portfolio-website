@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './Carousel.css';
 import ProjectCard from './ProjectCard';
 
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [transform, setTransform] = useState(0);
-  const [offset, setOffset] = useState(0);
+
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+
+  };
 
   const cards = [
     {
@@ -33,52 +42,50 @@ const Carousel = () => {
       tooltipText: "Check out the GitHub!"
     }
   ];
-
-  useEffect(() => {
-      const newOffset = (100 - 64) / 2;
-      const newTransform = currentIndex * 64;
-      setOffset(newOffset);
-      setTransform(newTransform);
-  }, [currentIndex])
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length); // Move to the next card
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
-  };
-
-  const getTransform = () => {
-    console.log("transform in getTransform", transform);
-    return `translateX(calc(${offset}% - ${transform}%))`;
-  }
   
   return (
-    <div className="carousel-container" >
-      <div
-        className="carousel-track"
-        style={{transform: getTransform()}}
-      >
-        {cards.map((card, index) => (
-          <a
-            key={index}
-            className={`project-link ${index === currentIndex ? 'active' : ''}`}
-            href={card.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <ProjectCard
-              title={card.title}
-              imageUrl={card.imageUrl}
-              tooltipText={card.tooltipText}
-              active={index === currentIndex}
-            />
+    <div className="carousel-container">
+      <Slider className="carousel" {...settings}>
+        <div className="project-container">
+        <a href={cards[0].link} target="_blank" rel="noopener noreferrer">
+            <ProjectCard className="project-card"
+                    title={cards[0].title}
+                    imageUrl={cards[0].imageUrl}
+                    tooltipText={cards[0].tooltipText}
+                  />
           </a>
-        ))}
-      </div>
-      <button className="carousel-control left" onClick={handlePrev} disabled={currentIndex === 0}>‹</button>
-      <button className="carousel-control right" onClick={handleNext} disabled={currentIndex === 3}>›</button>
+        </div>
+
+        <div className="project-container">
+        <a href={cards[1].link} target="_blank" rel="noopener noreferrer">
+            <ProjectCard className="project-card"
+                    title={cards[1].title}
+                    imageUrl={cards[1].imageUrl}
+                    tooltipText={cards[1].tooltipText}
+                  />
+          </a>
+        </div>
+
+        <div className="project-container">
+          <a href={cards[2].link} target="_blank" rel="noopener noreferrer">
+              <ProjectCard className="project-card"
+                      title={cards[2].title}
+                      imageUrl={cards[2].imageUrl}
+                      tooltipText={cards[2].tooltipText}
+                    />
+            </a>
+        </div>
+
+        <div className="project-container">
+          <a href={cards[3].link} target="_blank" rel="noopener noreferrer">
+            <ProjectCard className="project-card"
+                    title={cards[3].title}
+                    imageUrl={cards[3].imageUrl}
+                    tooltipText={cards[3].tooltipText}
+                  />
+          </a>
+        </div>
+      </Slider>
     </div>
   );
 };

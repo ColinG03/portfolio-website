@@ -189,7 +189,7 @@ body, #root {
   align-items: center;
   justify-content: center;
   height: 75px;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 }
 
 .hero {
@@ -265,7 +265,7 @@ body, #root {
   }
   .attributions {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 
 
@@ -284,10 +284,10 @@ body, #root {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 5%;
+      margin-top: 2%;
     }
     .hero {
-      flex-direction: column;
+      flex-direction: column-reverse;
       min-width: 100%;
       justify-content: center;
       align-items: center;
@@ -331,7 +331,7 @@ body, #root {
     .headshot-container {
       display: flex;
       flex-basis: auto;
-
+      margin-bottom: 4%;
     }
 
     #home {
