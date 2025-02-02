@@ -11,23 +11,23 @@ function App() {
       <Navbar></Navbar>
 
       <div id="home">  
-      <div className='hero'>
+       <div className='hero'>
           <div className='description'>
             <div>
               <div className='description-header'>
                 <h2>Hi, I'm Colin</h2>
                 <div className='icon-container'>
                   <a className='icon-link' href="Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
-                    <img className="icon" src="/portfolio-website/curriculum-vitae.png" alt="Resume/CV" />
+                    <img className="icon" src="/curriculum-vitae.png" alt="Resume/CV" />
                   </a>
                   <a className='icon-link' href="mailto:20cvwg@queensu.ca">
-                    <img className='icon' src="/portfolio-website/email.png" alt="email" target="_blank" rel="noopener noreferrer"/>
+                    <img className='icon' src="/email.png" alt="email" target="_blank" rel="noopener noreferrer"/>
                   </a>
                   <a className='icon-link' href="https://github.com/ColinG03" target="_blank" rel="noopener noreferrer">
-                    <img className="icon" src="/portfolio-website/github-mark.png" alt="GitHub" />
+                    <img className="icon" src="/github-mark.png" alt="GitHub" />
                   </a>
                   <a className='icon-link' href="https://www.linkedin.com/in/colin-gould15/" target="_blank" rel="noopener noreferrer">
-                    <img className="icon" src="/portfolio-website/LI-In-Bug.png" alt="LinkedIn" />
+                    <img className="icon" src="/LI-In-Bug.png" alt="LinkedIn" />
                   </a>
                 </div>
               </div>
@@ -45,19 +45,6 @@ function App() {
           </a>
         </div>
       </div> 
-      
-      {/* <div id="about-me">
-        <div className='section-header'>
-          <p className='message header-message'>About Me</p>
-        </div>
-        <AboutMe />
-      </div> */}
-
-
-      {/* <div id="projects">
-        <Projects />
-      </div>
-  */}
 
     </div>
       <div className='attributions'>

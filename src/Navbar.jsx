@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Navbar.css'; // Import the CSS file for styling
-import { Link } from 'react-scroll';
+import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,25 +10,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+<nav className="navbar">
       <div className="navbar-logo">
-        <a>
-          <h1>Colin Gould</h1>
-        </a>
+        <h1>Colin Gould</h1>
       </div>
       <div className='navbar-container'>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <div className="link-container">
-            {/* <Link to="home" smooth={true} duration={500} offset={-250}>Home</Link> */}
-            <li><a href="/portfolio-website/">Home</a></li>
+          <div className="link-container">
+            <li><Link to="/">Home</Link></li>
           </div>
           <div className="link-container">
-            {/* <Link to="about-me" smooth={true} duration={500} offset={-125}>About Me</Link> */}
-            <li><a href="/portfolio-website/about-me">About Me</a></li>
+            <li><Link to="/about-me">About Me</Link></li>
           </div>
           <div className="link-container">
-            {/* <Link to="projects" smooth={true} duration={500} >Projects</Link> */}
-            <li><a href="/portfolio-website/projects">Projects</a></li>
+            <li><Link to="/projects">Projects</Link></li>
           </div>
         </div>
       </div>

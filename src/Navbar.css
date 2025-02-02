@@ -69,7 +69,6 @@ a, h1 {
     width: 0;
     height: 2px;
     background-color: #8da57a;
-    /* background-color: #152904; */
     transition: width 0.3s ease-in-out;
 }
 
@@ -78,17 +77,14 @@ a, h1 {
 }
 
 .navbar-links li:hover {
-  /* color: #8da57a; */
   color: #152904;
 }
 
 .navbar-logo li:hover {
-    /* color: #8da57a; */
     color: #152904;
 
 }
 
-/* Navbar toggle for mobile (hamburger menu) */
 .navbar-toggle {
   display: none;
   cursor: pointer;
@@ -100,7 +96,7 @@ a, h1 {
 .navbar-toggle .bar {
   height: 3px;
   width: 30px;
-  background-color: #152904; /* Natural green for toggle bars */
+  background-color: #152904;
   margin: 3px 0;
   transition: all 0.3s ease;
 }
@@ -144,7 +140,6 @@ a, h1 {
     width: 100%;
     height: 100%;
     background-color: linen;
-    /* padding: 1rem 0; */
     transition: background-color 0.3s ease;
     display: flex;
     flex-direction: column;
