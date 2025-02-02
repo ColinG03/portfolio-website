@@ -18,7 +18,7 @@ function App() {
                 <h2>Hi, I'm Colin</h2>
                 <div className='icon-container'>
                   <a className='icon-link' href="Colin_Gould_Resume_Current.pdf" target="_blank" rel="noopener noreferrer">
-                    <img className="icon" src="/curriculum-vitae.png" alt="Resume/CV" />
+                    <img className="icon" src="curriculum-vitae.png" alt="Resume/CV" />
                   </a>
                   <a className='icon-link' href="mailto:20cvwg@queensu.ca">
                     <img className='icon' src="/email.png" alt="email" target="_blank" rel="noopener noreferrer"/>
