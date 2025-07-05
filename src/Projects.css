@@ -1,11 +1,294 @@
-Project {
-    width: auto;
-    height: auto;
+/* ========================================
+   PROJECTS PAGE STYLES
+   ======================================== */
+
+/* Import fonts if needed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap");
+
+/* ========================================
+   PAGE LAYOUT
+   ======================================== */
+
+.projects-page {
+    min-height: 100vh;
+    background-color: #fdf7e3;
+    font-family: 'Roboto Mono', 'Inconsolata', monospace;
+    color: #5a6343;
 }
 
-.proj-section-container {
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #152904;
+    margin-bottom: 1rem;
+    letter-spacing: -0.025em;
+    line-height: 1;
+}
+
+.projects-subtitle {
+    font-size: 1.25rem;
+    color: #5a6343;
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.625;
+}
+
+/* ========================================
+   PROJECTS GRID
+   ======================================== */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+/* ========================================
+   PROJECT CARD STYLES
+   ======================================== */
+
+.project-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: #faf7f0;
+    border-radius: 12px;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.05),
+        0 8px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1f2f6;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    min-height: 450px;
+    width: 100%;
 }
+
+/* Project Image */
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 12rem;
+    width: 100%;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    vertical-align: top;
+}
+
+.project-image.contain {
+    object-fit: contain;
+}
+
+.project-image.cover {
+    object-position: top;
+    object-fit: cover;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+/* Project Content */
+.project-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #152904;
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+    color: #8da57a;
+}
+
+.project-description {
+    color: #5a6343;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Skills Tags */
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-tag {
+    padding: 0.25rem 0.75rem;
+    background-color: #f0ede6;
+    color: #152904;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: 1px solid rgba(212, 208, 196, 0.3);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #e8e5dc;
+    transform: translateY(-1px);
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #8da57a;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #6b7a47;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-secondary {
+    background-color: #f0ede6;
+    color: #152904;
+    border: 1px solid rgba(212, 208, 196, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: #e8e5dc;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .projects-title {
+        font-size: 2.5rem;
+    }
+    
+    .projects-grid {
+        gap: 1.5rem;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        padding: 1rem 0.75rem;
+    }
+    
+    .projects-title {
+        font-size: 2rem;
+    }
+    
+    .projects-grid {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        margin: 0 0.5rem;
+    }
+} 

@@ -189,7 +189,7 @@ body, #root {
   align-items: center;
   justify-content: center;
   height: 75px;
-  /* margin-top: 10rem; */
+  margin-top: 2rem;
 }
 
 .hero {
