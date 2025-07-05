@@ -112,7 +112,7 @@ const AboutMe = () => {
                             
                             <div className='hobby-card'>
                                 <div className='hobby-image'>
-                                    <img src="/hackAi2025-43.jpeg" alt="Coding, AI and Hackathons" />
+                                    <img src="hackAi2025-43.jpeg" alt="Coding, AI and Hackathons" />
                                 </div>
                                 <div className='hobby-content'>
                                     <h4>Coding, AI and Hackathons</h4>
@@ -132,7 +132,7 @@ const AboutMe = () => {
 
                             <div className='hobby-card'>
                                 <div className='hobby-image'>
-                                    <img src="/IMG_2172.JPG" alt="Skiing" />
+                                    <img src="IMG_2172.JPG" alt="Skiing" />
                                 </div>
                                 <div className='hobby-content'>
                                     <h4>Skiing</h4>
@@ -142,7 +142,7 @@ const AboutMe = () => {
 
                             <div className='hobby-card'>
                                 <div className='hobby-image'>
-                                    <img src="/VII_EEE-131.JPG" alt="Guitar & Music" />
+                                    <img src="VII_EEE-131.JPG" alt="Guitar & Music" />
                                 </div>
                                 <div className='hobby-content'>
                                     <h4>Guitar & Music</h4>
