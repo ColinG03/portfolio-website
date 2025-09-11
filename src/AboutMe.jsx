@@ -1,6 +1,4 @@
-import Card from './Card';
 import Navbar from './Navbar';
-import SkillCard from './SkillCard';
 import './AboutMe.css';
 
 const AboutMe = () => {
@@ -13,35 +11,6 @@ const AboutMe = () => {
                 </div>
                 
                 <div className='about-content'>
-                    <div className='about-section'>
-                        <h2>Education</h2>
-                        <div className='paper-card'>
-                            <div className='degree-info'>
-                                <h3>Applied Mathematics & Computer Engineering</h3>
-                                <p className='institution'>Queen's University</p>
-                            </div>
-                            <div className='details'>
-                                <div className='detail-group'>
-                                    <h4>Computer Engineering Focus</h4>
-                                    <ul>
-                                        <li>Data Structures & Algorithms</li>
-                                        <li>Object-Oriented Programming</li>
-                                        <li>Software Development</li>
-                                        <li>Computer Architecture</li>
-                                    </ul>
-                                </div>
-                                <div className='detail-group'>
-                                    <h4>Mathematics Foundation</h4>
-                                    <ul>
-                                        <li>Real & Complex Analysis</li>
-                                        <li>Probability Theory</li>
-                                        <li>Stochastic Processes</li>
-                                        <li>Machine Learning Applications</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div className='about-section'>
                         <h2>Work Experience</h2>
@@ -72,8 +41,35 @@ const AboutMe = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* <SkillCard></SkillCard> */}
+                    <div className='about-section'>
+                        <h2>Education</h2>
+                        <div className='paper-card'>
+                            <div className='degree-info'>
+                                <h3>Applied Mathematics & Computer Engineering</h3>
+                                <p className='institution'>Queen's University</p>
+                            </div>
+                            <div className='details'>
+                                <div className='detail-group'>
+                                    <h4>Computer Engineering Focus</h4>
+                                    <ul>
+                                        <li>Data Structures & Algorithms</li>
+                                        <li>Object-Oriented Programming</li>
+                                        <li>Software Development</li>
+                                        <li>Computer Architecture</li>
+                                    </ul>
+                                </div>
+                                <div className='detail-group'>
+                                    <h4>Mathematics Foundation</h4>
+                                    <ul>
+                                        <li>Real & Complex Analysis</li>
+                                        <li>Probability Theory</li>
+                                        <li>Stochastic Processes</li>
+                                        <li>Machine Learning Applications</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div className='about-section'>
                         <h2>Extra-Curricular Involvement</h2>
@@ -136,7 +132,7 @@ const AboutMe = () => {
                                 </div>
                                 <div className='hobby-content'>
                                     <h4>Skiing</h4>
-                                    <p>Downhill ski raced for 10+ years, representing Ontario at Eastern Can-Ams and Whistler Cup. Currently a passionate backcountry and all-mountain skiier!</p>
+                                    <p>Downhill ski raced for 10+ years, representing Ontario at Eastern Can-Ams and Whistler Cup. Currently a passionate backcountry and all-mountain skier!</p>
                                 </div>
                             </div>
 
