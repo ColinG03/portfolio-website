@@ -15,6 +15,15 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "Mantis",
+      description: "An AI-powered command-line tool that dynamically scans any webapp for latent UI bugs and accessibility concerns, then launches a local dashboard for review. Try it out with 'pip install mantis-web-crawler'",
+      image: "mantis.png",
+      skills: ["Playwright", "axe-core", "CLI"],
+      link: "https://pypi.org/project/mantis-web-crawler/",
+      imageFit: "cover",
+    },
+    {
+      id: 3,
       title: "Chameleon",
       description: "An AI workflow application for content creators that repurposes long-form content into short-form, platform-optimized posts.",
       image: "chameleon.png",
@@ -23,7 +32,7 @@ const Projects = () => {
       imageFit: "cover",
     },
     {
-      id: 3,
+      id: 4,
       title: "Cryptocurrency Arbitrage Pathfinding",
       description: "Used RL techniques to train a Graph Conv. Neural Net to find arbitrage opportunities in the crypto market.",
       image: "crypto_demo.png",
@@ -32,7 +41,7 @@ const Projects = () => {
       imageFit: "cover",
     },
     {
-      id: 4,
+      id: 5,
       title: "Mechanistic Interpretability for LLM Jailbreak Prevention",
       description: "Preventing adversarial attacks on LLMs using a novel feature steering technique.",
       image: "jailbreaking.png",
@@ -41,7 +50,7 @@ const Projects = () => {
       imageFit: "cover",
     },
     {
-      id: 5,
+      id: 6,
       title: "Bed Match Pro",
       description: "Hack The Globe 2024 Submission: A healthcare optimization system designed to efficiently match patients with available hospital beds in real-time.",
       image: "hospital-bed.png",
@@ -50,9 +59,9 @@ const Projects = () => {
       imageFit: "contain",
     },
     {
-      id: 6,
+      id: 7,
       title: "Breast Cancer Classification",
-      description: "A machine learning model for accurate breast cancer detection and classification using advanced image processing and deep learning techniques.",
+      description: "A machine learning model for accurate breast cancer detection and classification using neural networks",
       image: "microscope.png",
       skills: ["TensorFlow", "Keras"],
       link: "https://www.kaggle.com/code/colingould/siyung-cho-advanced-hackathon-starter-notebook",
