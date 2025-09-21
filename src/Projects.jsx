@@ -1,8 +1,24 @@
 import ProjectCard from "./ProjectCard.jsx";
 import "./Projects.css";
 import Navbar from "./Navbar.jsx";
+import GitHubCalendar from 'react-github-calendar';
+import { useState, useEffect } from 'react';
 
 const Projects = () => {
+  
+  
+  const [showCalendar, setShowCalendar] = useState(window.innerWidth >= 1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowCalendar(window.innerWidth >= 1200);
+    };
+  
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
+
   const projects = [
     {
       id: 1,
@@ -79,6 +95,8 @@ const Projects = () => {
             <p className="projects-subtitle">A collection of my recent work!</p>
           </header>
           
+          {showCalendar && <GitHubCalendar className="calendar" username="ColinG03" />}
+
           <div className="projects-grid">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />

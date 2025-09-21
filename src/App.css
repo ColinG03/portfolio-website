@@ -20,28 +20,18 @@
   background-size: cover;
 }
 
-.message {
-  height: 100px;
-  font-family: 'Inconsolata', monospace;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  background: linear-gradient(90deg, #8da57a, #c6d3b2);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  color: transparent;
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fdf7e3;
 }
 
-.sub-message {
-  font-size: 1rem;
-  color: #5a6343;
+.description-container {
   margin-bottom: 2rem;
-}
-
-.bottom-message {
-  font-size: 4rem;
-  margin-bottom: 80px;
-  color: #5a6343;
 }
 
 .navbar {
@@ -293,6 +283,7 @@ body, #root {
       margin: 0;
     }
 
+
     .description {
       min-width: 100%;
       padding: 5%;
@@ -348,7 +339,3 @@ body, #root {
       height: auto;
     }
   }
-
-  
-
-  
