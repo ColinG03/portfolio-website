@@ -1,4 +1,5 @@
 import Navbar from './Navbar';
+import MovieRatings from './MovieRatings';
 import './AboutMe.css';
 
 const AboutMe = () => {
@@ -11,86 +12,22 @@ const AboutMe = () => {
                 </div>
                 
                 <div className='about-content'>
-
-                    <div className='about-section'>
-                        <h2>Work Experience</h2>
-                        <div className='paper-card'>
-                            <div className='job-info'>
-                                <h3>Software Developer Intern</h3>
-                                <p className='company'>RBC Capital Markets - Quantitative & Technology Services</p>
-                            </div>
-                            <div className='details'>
-                                <div className='detail-group'>
-                                    <h4>Key Responsibilities</h4>
-                                    <ul>
-                                        <li>Developed, maintained, and deployed pricing and risk applications for equity derivatives</li>
-                                        <li>Built observability and monitoring tools for key processes</li>
-                                        <li>Developed robust CI/CD pipelines for seamless deployment</li>
-                                    </ul>
-                                </div>
-                                <div className='detail-group'>
-                                    <h4>Technologies Used</h4>
-                                    <ul>
-                                        <li>C# (.NET)</li>
-                                        <li>C++</li>
-                                        <li>JavaScript (Angular, Node.js, Express.js, Sequelize ORM)</li>
-                                        <li>SQL Server</li>
-                                        <li>Jenkins</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='about-section'>
-                        <h2>Education</h2>
-                        <div className='paper-card'>
-                            <div className='degree-info'>
-                                <h3>Applied Mathematics & Computer Engineering</h3>
-                                <p className='institution'>Queen's University</p>
-                            </div>
-                            <div className='details'>
-                                <div className='detail-group'>
-                                    <h4>Computer Engineering Focus</h4>
-                                    <ul>
-                                        <li>Data Structures & Algorithms</li>
-                                        <li>Object-Oriented Programming</li>
-                                        <li>Software Development</li>
-                                        <li>Computer Architecture</li>
-                                    </ul>
-                                </div>
-                                <div className='detail-group'>
-                                    <h4>Mathematics Foundation</h4>
-                                    <ul>
-                                        <li>Real & Complex Analysis</li>
-                                        <li>Probability Theory</li>
-                                        <li>Stochastic Processes</li>
-                                        <li>Machine Learning Applications</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div className='intro-blurb'>
+                        <p>
+                            Hey there! I'm currently pursuing my <b>Applied Mathematics & Computer Engineering</b> degree at <b>Queen's University</b>. 
+                            Previously, I spent a year working as a <b>Software Developer Intern at RBC Capital Markets</b>, 
+                            where I built pricing and risk applications with the equity derivatives team.
+                        </p>
+                        <br />
+                        <p>
+                            Right now, I'm building <b>Compile</b>, an AI news and media aggregator, and serving as Director of Design for <b>QMIND</b>, the Queen's Machine Learning Club.
+                            I love the outdoors – camping, hiking, paddling, and skiing. I also spend my summers working as a canoe tripping guide. I'm also into music, reading, and watching movies – check out
+                            my recent Letterboxd reviews below!
+                        </p>
                     </div>
 
                     <div className='about-section'>
-                        <h2>Extra-Curricular Involvement</h2>
-                        <div className='paper-card'>
-                            <div className='details'>
-                                <div className='detail-group'>
-                                    <h4>Queen's Machine Learning Club (QMIND)</h4>
-                                    <ul>
-                                        <li>Director of Design - responsible for hiring and overseeing PMs and design team members.</li>
-                                        <li>Previous projects include <em>Mechanistic Interpretability for LLM Jailbreak Defense</em> and <em>RL for Cryptocurrency Arbitrage Pathfinding</em></li>
-                                    </ul>
-                                </div>
-                                <div className='detail-group'>
-                                    <h4>Commerce and Engineering Environmental Conference (CEEC)</h4>
-                                    <ul>
-                                        <li>Sponsorship Director - led team of 4 coordinators to secure $40,000 in sponsorships, allowing for a 50% decrease in attendance fees compared to previous years</li>
-                                        <li>Helping organize and run Canada's largest undergraduate sustainability conference</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <MovieRatings />
                     </div>
 
                     <div className='about-section'>
@@ -112,7 +49,7 @@ const AboutMe = () => {
                                 </div>
                                 <div className='hobby-content'>
                                     <h4>Coding, AI and Hackathons</h4>
-                                    <p>I love working on projects, attending hackathons and keeping up with the latest developments in AI (I built Compile to help with that last one ;)</p>
+                                    <p>I love working on projects, attending hackathons and keeping up with the latest developments in AI (I'm building Compile to help with that last one ;)</p>
                                 </div>
                             </div>
                             
