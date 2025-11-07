@@ -83,7 +83,6 @@
     border: 1px solid #f1f2f6;
     overflow: hidden;
     transition: all 0.3s ease;
-    cursor: pointer;
     min-height: 450px;
     width: 100%;
 }
@@ -146,11 +145,6 @@
     font-weight: 700;
     color: #152904;
     margin-bottom: 0.75rem;
-    transition: color 0.3s ease;
-}
-
-.project-card:hover .project-title {
-    color: #8da57a;
 }
 
 .project-description {
@@ -182,7 +176,6 @@
 }
 
 .skill-tag:hover {
-    background-color: #e8e5dc;
     transform: translateY(-1px);
 }
 
