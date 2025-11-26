@@ -8,15 +8,82 @@ const MovieRatings = () => {
 
     useEffect(() => {
         const fetchMovies = async () => {
+            const rssUrl = 'https://letterboxd.com/coling15g/rss/';
+            
+            // Try multiple CORS proxies in sequence
+            const proxyOptions = [
+                'https://api.allorigins.win/raw?url=',
+                'https://corsproxy.io/?',
+                'https://api.codetabs.com/v1/proxy?quest='
+            ];
+
+            let lastError = null;
+            let xmlText = null;
+
+            // Try each proxy until one succeeds
+            for (const proxyUrl of proxyOptions) {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 3000);
+                
+                try {
+                    const fullUrl = proxyUrl + encodeURIComponent(rssUrl);
+                    const response = await fetch(fullUrl, {
+                        signal: controller.signal
+                    });
+                    
+                    clearTimeout(timeoutId);
+                    
+                    if (!response.ok) {
+                        console.warn(`Proxy ${proxyUrl} returned status ${response.status}`);
+                        lastError = new Error(`HTTP error! status: ${response.status}`);
+                        continue; // Try next proxy
+                    }
+
+                    xmlText = await response.text();
+                    break; // Success, exit loop
+                } catch (err) {
+                    clearTimeout(timeoutId);
+                    if (err.name === 'AbortError') {
+                        console.warn(`Proxy ${proxyUrl} timed out after 3 seconds`);
+                        lastError = new Error('Request timeout');
+                    } else {
+                        console.warn(`Proxy ${proxyUrl} failed:`, err.message);
+                        lastError = err;
+                    }
+                    continue; // Try next proxy
+                }
+            }
+
+            // If all proxies failed, use fallback
+            if (!xmlText) {
+                console.error('All proxies failed, using fallback data');
+                const fallbackMovies = [
+                    {
+                        name: "Memento",
+                        year: "2000",
+                        rating: "★★★★½",
+                        posterUrl: "https://a.ltrbxd.com/resized/sm/upload/v1/3q/s4/aa/memento-0-600-0-900-crop.jpg?v=80f0732247"
+                    },
+                    {
+                        name: "Full Metal Jacket",
+                        year: "1987",
+                        rating: "★★★★½",
+                        posterUrl: "https://a.ltrbxd.com/resized/sm/upload/l0/l4/6c/7v/29veIwD38rVL2qY74emXQw4y25H-0-600-0-900-crop.jpg?v=6e44829670"
+                    },
+                    {
+                        name: "Carts of Darkness",
+                        year: "2008",
+                        rating: "★★★★",
+                        posterUrl: "https://a.ltrbxd.com/resized/film-poster/1/5/6/7/6/15676-carts-of-darkness-0-600-0-900-crop.jpg?v=37de9b1d51"
+                    }
+                ];
+                setMovies(fallbackMovies);
+                setLoading(false);
+                return;
+            }
+
+            // Parse the RSS feed
             try {
-                // Use a CORS proxy to fetch the RSS feed
-                const proxyUrl = 'https://api.allorigins.win/raw?url=';
-                const rssUrl = 'https://letterboxd.com/coling15g/rss/';
-                const response = await fetch(proxyUrl + encodeURIComponent(rssUrl));
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-
-                const xmlText = await response.text();
-
                 const parser = new DOMParser();
                 const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
 
@@ -72,8 +139,8 @@ const MovieRatings = () => {
                 setMovies(movieData);
                 setLoading(false);
             } catch (err) {
-                console.error('Error fetching movies:', err);
-                // Fallback to sample data if RSS fails
+                console.error('Error parsing RSS feed:', err);
+                // Fallback to sample data if parsing fails
                 const fallbackMovies = [
                     {
                         name: "Memento",
