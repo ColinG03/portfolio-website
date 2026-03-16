@@ -20,7 +20,7 @@ const AboutMe = () => {
                         </p>
                         <br />
                         <p>
-                            Right now, I'm building <b>Compile</b>, an AI news and media aggregator, and serving as Director of Design for <b>QMIND</b>, the Queen's Machine Learning Club.
+                            Right now I'm serving as Director of Design for <b>QMIND</b>, the Queen's Machine Learning Club.
                             I love the outdoors – camping, hiking, paddling, and skiing. I also spend my summers working as a canoe tripping guide. I'm also into music, reading, and watching movies – check out
                             my recent Letterboxd reviews below!
                         </p>

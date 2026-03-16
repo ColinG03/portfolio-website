@@ -31,14 +31,13 @@ function App() {
                   </div>
                 </div>
                 <div className='description-text'>
-                    <p>I am a Mathematics and Computer Engineering student at Queen's University.</p>
+                    <p>I am in my final year of Mathematics and Computer Engineering at Queen's University.</p>
                     <br />
-                    <p>I am currently building <a href="https://www.compile-news.com/summaries" target="_blank" rel="noopener noreferrer">Compile</a>, 
-                       an AI news and media aggregator, and serving as Director of Design for <a href="https://qmind.ca/" target="_blank" rel="noopener noreferrer">QMIND</a>, 
+                    <p>I am currently serving as Director of Design for <a href="https://qmind.ca/" target="_blank" rel="noopener noreferrer">QMIND</a>, 
                        the Queen's Machine Learning Club.
                     </p>
                     <br />
-                    <p>Previously, I worked as a Software Developer Intern at RBC Capital Markets on the Global Equity and Derivatives team.</p>
+                    <p>Previously, I worked as a Software Engineering Intern at RBC Capital Markets on the Global Equity and Derivatives team.</p>
                 </div>
               </div>
         </div>
