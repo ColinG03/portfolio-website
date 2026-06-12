@@ -14,15 +14,13 @@ const AboutMe = () => {
                 <div className='about-content'>
                     <div className='intro-blurb'>
                         <p>
-                            Hey there! I'm currently pursuing my <b>Applied Mathematics & Computer Engineering</b> degree at <b>Queen's University</b>. 
-                            Previously, I spent a year working as a <b>Software Developer Intern at RBC Capital Markets</b>, 
-                            where I built pricing and risk applications with the equity derivatives team.
+                            Hey there! I'm a Software Engineer at{' '}
+                            <a href="https://exa.ai" target="_blank" rel="noopener noreferrer">Exa</a>, building AI search systems. I graduated from Queen's University with a degree in Applied Mathematics & Computer Engineering.
                         </p>
                         <br />
                         <p>
-                            Right now I'm serving as Director of Design for <b>QMIND</b>, the Queen's Machine Learning Club.
-                            I love the outdoors – camping, hiking, paddling, and skiing. I also spend my summers working as a canoe tripping guide. I'm also into music, reading, and watching movies – check out
-                            my recent Letterboxd reviews below!
+                            I love the outdoors, camping, hiking, paddling, and skiing. I also worked as a canoe guide for many summers!
+                            I'm also into music, reading, and watching movies – check out my recent Letterboxd reviews below!
                         </p>
                     </div>
 
@@ -49,7 +47,7 @@ const AboutMe = () => {
                                 </div>
                                 <div className='hobby-content'>
                                     <h4>Coding, AI and Hackathons</h4>
-                                    <p>I love working on projects, attending hackathons and keeping up with the latest developments in AI (I'm building Compile to help with that last one ;)</p>
+                                    <p>I love working on projects, attending hackathons and keeping up with the latest developments in AI</p>
                                 </div>
                             </div>
                             

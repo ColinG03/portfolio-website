@@ -31,13 +31,12 @@ function App() {
                   </div>
                 </div>
                 <div className='description-text'>
-                    <p>I am in my final year of Mathematics and Computer Engineering at Queen's University.</p>
-                    <br />
-                    <p>I am currently serving as Director of Design for <a href="https://qmind.ca/" target="_blank" rel="noopener noreferrer">QMIND</a>, 
-                       the Queen's Machine Learning Club.
+                    <p>
+                      I'm a Software Engineer at{' '}
+                      <a href="https://exa.ai" target="_blank" rel="noopener noreferrer">Exa</a>, building AI search systems.
+                      <br/><br/>
+                      I graduated from Queen's University with a degree in Applied Mathematics & Computer Engineering.
                     </p>
-                    <br />
-                    <p>Previously, I worked as a Software Engineering Intern at RBC Capital Markets on the Global Equity and Derivatives team.</p>
                 </div>
               </div>
         </div>
